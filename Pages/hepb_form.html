@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name ="keyword" content="HTML 5, CSS 3, JavaScript, JOuery, Angularjs"/>
+<meta name="description" content=" Dynamic web developrment">
+<meta name ="author" content="mildred">
+<meta name=" viewport" content ="width=device-width, initial-scale=1.0">
+<title> float layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../Css/CSS.css">
+<style> 
+
+.table-box{
+    border: solid 1px;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.table-box, th,td{
+    border: 1px solid rgb(160, 155, 155);
+    padding: 7px;      
+}
+.side-nav {
+    width: 280px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    height: 600px;
+}
+
+.side-nav a {
+    margin-top: 10px;
+    background-color: #ccc;
+    width: 250px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    border-radius: 3%;
+}
+.side-nav a:hover{
+    background-color:#ee0bd0;
+}
+.side-nav a:hover{
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+    <nav class="topnav">
+        <ul>
+            <li><a href="../Pages/clients page.html">Home</a></li>
+            <li><a href="../index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="row">
+        <nav class="col-3">
+            <div class="side-nav">                
+
+                <a href="../Pages/personalinfo.html">Personal Information</a>
+                <a href="../Pages/riskfactors.html">Risk Factor Information</a>
+                <a href="../Pages/hepb_form.html">Hepatitis B Pregnant Women Reporting</a>
+                <a href="../Pages/cong_syphillis.html">Congenital Syphilis Form</a>
+                <a href="../Pages/sti.html">Chlamydia & Gonorrhea case reporting</a>
+        </div>
+        </nav>
+
+        <article class="col-9">
+            <h2 style="text-align: center;"> Hepatitis B Infected Pregnant Woman Reporting Form </h2>
+            <form method="post" action="" autocomplete="off" class="form-container">
+               
+                <Table class="table-box" style="border: solid 1px;">
+                    
+                    <tr>
+                            <td><b><label for="lastname">Last Name:</label></b><br>
+                            <input type="text" size="35" id="lastname" placeholder="Enter lastnmae" required name="lastname"></td>
+
+                            <td><b><label for="firstnmae">First Name:</label></b><br>
+                            <input type="text" size="35" id="firstnmae" placeholder="Enter firstnmae" required name="firstnmae" ></td>
+
+                            <td><b><label for="middlename">Middle Name:</label></b><br>
+                            <input type="text" size="35" id="middlename" placeholder="Enter middlename" required name="middlename"></td>
+                        </tr>
+
+                        <tr>
+                            <td><b><label for="dob">Date of Birth:</label></b><br/>
+                            <input type="date" id="dob" name="dateofbirth"></td>
+
+                         <td><b><label for="deliverydate">Estimated Delivery Date:</label></b><br/>
+                            <input type="date" id="deliverydate" name="estimatedate" ></td>
+
+                            <td><b><label for="patient">Patient aware of HepB+ status?</label></b><br/>
+                            <input type="checkbox" id="patient" name="patientstatus" value="yes">
+                            <label>Yes</label>
+                            <input type="checkbox" id="patient" name="patientstatus" value="no">
+                            <label>No</label></td>
+                        </td>                    
+                    </tr>
+                    
+                    <tr>
+                        <td><b><label for="add">Address:</label></b> <br/>
+                        <input type="text" size="40" id="add" name="address" placeholder="Enter Address" required></td>
+
+                        <td><b><label for="city">City:</label></b><br/>
+                         <input type="text" id="city" name="city" placeholder="city"></td>
+
+                         <td><b><label for="zipcode">State Zip:</label></b> <br/>
+                        <input type="text" id="zipcode" name="zipcode" placeholder="zipcode"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan=""><b><label for="Phone">Phone Number:</label></b><br/>
+                        <input type="tel" placeholder="000-000-0000" name="phonenumer" id="Phone"></td>
+
+                        <td colspan="3"><b><label for="type">Type of Insurance:</label></b><br/>
+                        <input type="checkbox" id="type" name="insurance" value="private">
+                        <label>Private</label>
+                        <input type="checkbox" id="type" name="insurance" value="medicaid">
+                        <label>Medicaid</label>
+                        <input type="checkbox" id="type" name="insurance" value="medicare">
+                        <label>Medicare</label>
+                        <input type="checkbox" id="type" name="insurance" value="uninsured">
+                        <label>Uninsured</label>
+                        <input type="checkbox" id="type" name="insurance" value="unknown">
+                        <label>Unknown</label></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><b><label for="race">Race:</label></b><br/>
+                        <input type="checkbox" id="race" name="race" value=" American-indians">
+                        <label>American Indian/Alaskan Native</label>
+
+                        <input type="checkbox" id="race" name="race" value="Hawaiian">
+                        <label>Native Hawaiian/Pacific Islander</label>
+
+                        <input type="checkbox" id="race" name="race" value="Asian">
+                        <label>Asian</label><br/>
+
+                        <input type="checkbox" id="race" name="race" value="White">
+                        <label>White</label>
+
+                        <input type="checkbox" id="race" name="race" value="black/African">
+                        <label>Black/African American</label>
+
+                        <input type="checkbox" id="race" name="race" value="other">
+                        <label>Other</label></td>
+
+                        <td><b><label for="hispanic">Hispanic:</label></b><br/>
+                        <input type="checkbox" id="hispanic" name="race" value="yes">
+                        <label>Yes</label>
+    
+                        <input type="checkbox" id="hispanic" name="race" value="no">
+                        <label>No</label></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><b><label for="birth">Country of Birth:</label></b><br/>
+                        <input type="text" size="50" id="birth" name="countrybirth"></td>
+
+                        <td><b><label for="primary">Primary Language:</label></b><br/>
+                        <input type="text" size="30" id="primary" name="Language"><br/><br/>
+
+                    <b><label for="needed">Check if Interpreter Needed:</label></b>
+                <input type="checkbox" id="needed" name="interpreter" value="check"></td>
+                    </tr>
+
+                    <tr><td colspan="3"><h3>LABORATORY INFORMATION</h3></td></tr>
+                    <tr>
+                        <td colspan="3"><label for="lab"><b>Laboratory Results:</b> Check off below any POSITIVE labs and attach positive Hep B lab results</label><br/><br/>
+                        <input type="checkbox" id="lab" name="hbsag" value="HBsAg">
+                        <label>HBsAg (Hep B surface antigen)</label>
+                        
+                        <input type="checkbox" id="lab" name="hbeag" value="HBeAg">
+                        <label>HBeAg (Hep Be antigen)</label><br/><br/>
+
+                        <input type="checkbox" id="lab" name="igm" value="IgM">
+                        <label>IgM anti-HBc (IgM antibody to Hep B core antigen)</label>
+
+                        <input type="checkbox" id="lab" name="hbv" value="HbV">
+                        <label>HBV DNA (Hep B virus DNA)</label>
+                    </td>
+                    </tr>
+
+                    <tr><td colspan="3"><h3>CLINICAL INFORMATION</h3></td></tr>
+
+                    <tr>
+                    <td><b><label for="pro">OB Provider Last Name:</label></b><br/>
+                    <input type="text" size="40" id="pro" name="provider"></td>
+
+                    <td><b><label for="fnamepro">OB Provider First Name:</label></b><br/>
+                    <input type="text" size="40" id="fnamepro" name="fnameprovider"></td>
+
+                    <td><b><label for="protype">Provider Type</label></b><br/>
+                    <input type="checkbox" id="protype" name="providertype" value="MD">
+                    <label>MD/DO</label><br/>
+                    
+                    <input type="checkbox" id="protype" name="cnm" value="CNM">
+                    <label>CNM/NP</label> <br/>                   
+
+                    <input type="checkbox" id="protype" name="pa" value="PA">
+                    <label>PA</label></td>                    
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><b><label for="facility">Expected Delivery Facility:</label></b><br/>
+                        <input type="text" size="100" id="facility" name="facility"></td>
+                    </tr>
+
+                     <tr>
+                        <td colspan="3"><b><label for="facility2">Expected Delivery Facility:</label></b><br/>
+                        <input type="text" size="100" id="facility2" name="facility2"></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><label for="address">Address:</label></b> <br/>
+                        <input type="text" size="40" id="address" name="address"></td>
+
+                        <td><b><label for="city2">City:</label></b> <br/>
+                        <input type="text" id="city2" name="city"></td>
+
+                        <td><b><label for="statezip">State Zip:</label></b> <br/>
+                        <input type="text" id="statezip" name="statezip"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><b><label for="contact">Contact Person at Reporting Facility:</label></b><br/>
+                        <input type="text" size="100" id="contact" name="contact-person"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><b><label for="direct">Direct Phone:</label></b>
+                        <input type="tel" placeholder="000-000-0000" id="direct" name="directphone">
+
+                        <b><label for="formdate">Date Form Completed:</label></b>
+                        <input type="date" id="formdate" name="completed-date">
+
+                        <input type="checkbox" id="positive" name="positivelab">
+                        <b><label for="positive">Positive Labs Attached</label></b>
+                        </td>
+                    </tr>
+                </Table><br/>
+                <input type="submit" value="submit" name="submit" style="  
+                margin-left: 400px;
+                margin-top: 20px;
+                margin-bottom: 20PX;
+                width: 10%;
+                padding: 10px;
+                background-color: #ee0bd0;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                color: white;">
+            </form>
+          
+        </article>
+    </section>
+
+
+</body>
+
+</html>

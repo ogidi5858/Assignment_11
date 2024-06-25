@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name ="keyword" content="HTML 5, CSS 3, JavaScript, JOuery, Angularjs"/>
+<meta name="description" content=" Dynamic web developrment">
+<meta name ="author" content="mildred">
+<meta name=" viewport" content ="width=device-width, initial-scale=1.0">
+<title> float layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../Css/CSS.css">
+<style>
+body{
+    background-image: url(../Image/registeration.jpg);
+    background-size: cover;   
+}   
+</style>
+</head>
+
+<body> 
+
+    <nav class="topnav">
+        <ul>
+            <li><a href="../Pages/registeration.html">Register</a></li>
+            <li><a href="../Pages/clients page.html">Home</a></li>
+            <li><a href="../index.html">Logout</a></li>
+        </ul>          
+    </nav>
+        
+        <section class="row">
+            <article class="col-12">
+
+                <div class="registration-container">
+               <div class="reg-head"><h2>Registration</h2></div> 
+                <form method="post" action="clients page.html" autocomplete="off">
+                    <table >
+                    <tr>
+                        <td><label for="fname">First Name:</label></td>
+                        <td><input type="text" id="fname" name="name" placeholder="Brown"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mname"> Middle Name:</label></td>
+                        <td><input type="text" id="mname" name="name" placeholder="Obi"></td>
+                    </tr>
+                       
+                    <tr>
+                        <td><label for="lname"> First Name:</label></td>
+                        <td><input type="text" id="lname" name="name" placeholder="Smith"></td>
+                    </tr>                   
+                        
+                    <tr>
+                        <td><label for="unique-id"> Unique Identifier:</label></td>
+                        <td><input type="password" id="unique-id" name="unique-id" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="sex"> Sex:</label></td>
+                         <td><select id="sex" name="sex" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>                        
+                       </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="gender-id">Gender Identity:</label>
+                        <td><select id="gender-id" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="transgender"> Transgender</option>  
+                        <option value="gender"> Gender neutral</option>
+                        <option value="genderqueer">Genderqueer</option>
+                        <option value="non-binary">  non-binary</option>                      
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="sexual_orientation"> Sexual Orientation:</label></td>
+                        <td><input type="text" id="sexual_orientation" name="sexual_orientation" required></td>    
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob">Year of Birth:</label></td>
+                        <td><input type="text" id="dob" name="dob" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="Register"></td>
+                    </tr>
+                </table>
+
+                </form>
+            </div>
+            </article>
+        </section>
+</body>
+
+</html>

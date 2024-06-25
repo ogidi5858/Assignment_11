@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name ="keyword" content="HTML 5, CSS 3, JavaScript, JOuery, Angularjs"/>
+<meta name="description" content=" Dynamic web developrment">
+<meta name ="author" content="mildred">
+<meta name=" viewport" content ="width=device-width, initial-scale=1.0">
+<title> float layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../Css/CSS.css">
+<style>
+    
+</style>
+</head>
+
+<body> 
+        <nav class="topnav">
+            <ul>
+                <li><a href="registeration.html">Registeration</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <section class="row">
+            <nav class="col-3">
+                <li><a href="#">Personal Information</a></li>
+                <li><a href="#">Risk Factor Information</a></li>
+                <li><a href="#">Hepatitis B </a></li>
+                <li><a href="#">Congenital Syphilis Form </a></li>
+                <li><a href="#"> Chlamydia & Gonorrhea case reporting form</a></li>
+            </nav>
+            <article class="col-9">
+                <h2>STI Case Report Form For Chlamydia and Gonorrhea</h2>
+                <form method="post" action="" autocomplete="off">
+                    <h3>Clinic Information:</h3>
+                    <table>
+                        <tr>                          
+                            <th>Date:</th>
+                            <td><input type="text" name="dateofreport"></td>
+                            <th>Person completing the form:</th>
+                            <td><input type="text" name="nameofreport"></td>
+                        </tr>
+                        <tr>
+                            <th>Health provider:</th>
+                            <td><input type="text" name="healthprovider"></td>
+                            <th>Contact phone number/fax:</th>
+                            <td><input type="text" name="contactphonenumber"></td>
+                        </tr>
+                    </table>
+                    <P>Your lab reported a communicable disease on the patient shown below and listed you as the provider. The Oregon Department of Human Services and Washington
+                        County require additional information. The fax cover sheet you have received references Oregon Law (ORS 433) that requires you to report this information.<BR/>
+                       <B>Please complete the form within 24 hours, or by the end of the next working day, and fax it back to our office at 503-846-3644. </B> If you
+                        prefer you may call to report the required information. We appreciate your cooperation and prompt handling of this confidential report.</P>
+
+                        <h3>Patient Information — Please complete all information requested below</h3>
+                        <table>
+                            <tr>
+                                <th><label for="name">NAME:</label></th>
+                                <td><input type="text" name="name" placeholder="Enter your full name" id="middlename" required></td>
+                                <th><label for="dob">DATE OF BIRTH:</label></th>
+                                <td><input type="date" id ="dob" name="dob"></td>
+                                <th><label for id="sex">GENDER:</label></th>
+                                <td><input type="checkbox" value="Male" name="gender">Male</td>
+                                <td><input type="checkbox" value="Female" name="gender">Female</td>
+                                <td><input type="checkbox" value="Other" name="gender">Other</td>
+                            </tr>
+                            
+                        </table>
+
+                            <table>
+                            <tr>
+                                <th><label for="homeaddress">HOME ADDRESS:</label></th>
+                                <td><input type="text" placeholder="Enter your Home-Address" name="homeaddress" size="50"></td>
+                                <th><label for="city/state"></label>city/state</th>
+                                <td><input type="text" name="city/state"></td>
+                                <th><label for="zipcode"></label>zip</th>
+                                <td><input type="text" name="zipcode" size="5"></td>
+
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <th><label for="phonenumber">PHONE NUMBER:</label></th>
+                                <td><input type="text" placeholder="0000-000-0000" name="phonenumber"></td>
+                                <th><label for="phonenumber">ALTERNATIVE #</label></th>
+                                <td><input type="text" placeholder="0000-000-0000" name="phonenumber"></td>
+                            </tr>
+                        </table>
+                        
+                        <table>
+                            <tr>
+                                <th><label for id="sex">PREGNANCT TEST RESULTS:</label></th>
+                                <td><input type="checkbox" value="Male" name="gender">N/A</td>
+                                <td><input type="checkbox" value="Female" name="gender">Negative</td>
+                                <td><input type="checkbox" value="Other" name="gender">Unknown</td>
+                                <td><input type="checkbox" value="Other" name="gender">Positive:</td>
+                                <th><label for id="sex">If positive how many weeks?</label></th>
+                                <td><input type="text"  name="question"></td>
+                            </tr>
+                        </table>   
+                        
+                        <table>
+                            <tr>
+                                <th><label for id="sex">ETHNICITY:</label></th>
+                                <td><input type="checkbox" value="ethnicity" name="hispanic">Hispanic<br/>
+                                <input type="checkbox" value="ethnicity" name="non-hispanic">Non-Hispanic<br/>
+                                <input type="checkbox" value="ethnicity" name="unknown">Unknown:</td>
+
+                                <th><label for id="sex">RACE:</label></th>
+                                <td><input type="checkbox" value="ethnicity" name="white">White<br/>
+                                <input type="checkbox" value="ethnicity" name="black">Black<br/>
+                                <input type="checkbox" value="ethnicity" name="asian">Asian</td>
+
+                                <td><input type="checkbox" value="ethnicity" name="american-indian">American Indian<br/>
+                                <input type="checkbox" value="ethnicity" name="alaskan">Alaskan<br/>
+                                <input type="checkbox" value="ethnicity" name="pacific-islander">Pacific Islander</td>
+                                
+                                <td><input type="checkbox" value="ethnicity" name="unknown">Unknown<br/>
+                                <input type="checkbox" value="ethnicity" name="asian">Other: 
+                                <input type="text" name="other" size="5"></td>
+
+                                <th><label for="">GENDER OF SEX PARTNER(S):</label></th>
+                                <td><input type="checkbox" value="sex" name="male">Male<br/>
+                                <input type="checkbox" value="sex" name="both">Both</td> 
+                                <td><input type="checkbox" value="sex" name="female">Female<br/>
+                                <input type="checkbox" value="sex" name="unknown">Unknown</td>                                                        
+                            </tr>
+                        </table>
+                        
+                        <table>
+                            <tr>
+                                <td><label>buy</label>buy</td>
+                            </tr>
+                        </table>
+
+                       
+                </form>
+            </article>
+        </section>
+</body>
+
+</html>

@@ -1,0 +1,715 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name ="keyword" content="HTML 5, CSS 3, JavaScript, JOuery, Angularjs"/>
+<meta name="description" content=" Dynamic web developrment">
+<meta name ="author" content="mildred">
+<meta name=" viewport" content ="width=device-width, initial-scale=1.0">
+<title> float layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../Css/CSS.css">
+<style> 
+
+.table-box{
+    border: solid 1px;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.table-box, th,td{
+    border: 1px solid rgb(160, 155, 155);  
+    padding: 7px;   
+}
+
+.table{
+    counter-reset: li;
+}
+li::before{
+    counter-increment: li;
+    content: counter(li)". ";
+}
+
+.side-nav {
+    width: 220px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    height: 600px;
+}
+
+.side-nav a {
+    margin-top: 10px;
+    background-color: #ccc;
+    width: 200px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    border-radius: 3%;
+}
+.side-nav a:hover{
+    background-color:#ee0bd0;
+}
+.side-nav a:hover{
+    color: white;
+}
+
+
+</style>
+</head>
+
+<body>
+    <nav class="topnav">
+        <ul>
+            <a href="../Pages/clients page.html">Home</a>
+            <a href="../index.html">Logout</a>
+        </ul>
+    </nav>
+
+    <section class="row">
+        <nav class="col-2">
+            <div class="side-nav">                
+                
+                <a href="../Pages/personalinfo.html">Personal Information</a>
+                <a href="../Pages/riskfactors.html">Risk Factor Information</a>
+                <a href="../Pages/hepb_form.html">Hepatitis B Pregnant Women Reporting</a>
+                <a href="../Pages/cong_syphillis.html">Congenital Syphilis Form</a>
+                <a href="../Pages/sti.html">Chlamydia & Gonorrhea case reporting</a>
+                
+            </div>
+        </nav>
+
+        <article class="col-10">
+            <h2 style="text-align: center;">CONGENITAL SYPHILIS (CS) CASE INVESTIGATION AND REPORT </h2>
+            <form method="post" action="" autocomplete="off" class="form-container">
+                <h3 class="head3"  class="head3" style="background-color: #d673c9; font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">Clinic Information:</h3>                
+                <Table class="table-box" >
+                    <tr><td colspan="6"></td></tr>
+                    <tr>
+                        <td colspan="2"><b><label for="mother">Mother’s Name</label></b>
+                        <input type="text" name="mother" id="mother" size="20" required></td>
+
+                        <td><b><label for="chart">Chart No:</label></b>
+                        <input type="text" id="chart" name="chart" size="10"></td>
+
+                        <td colspan="2"><b><label for="case">Mother’s Case ID No</label></b>
+                        <input type="text" id="case" name="mother" required></td>
+                    </tr>
+
+                    <tr>
+                    <td colspan="2"><b><label for="add">Address:</label></b>
+                    <input type="text" id="add" name="address" size="40" required><br/>
+                    <label>(Number, Street, City, State)</label></td>
+
+                    <td><input type="text" size="6" id="zip"><br/>
+                   <b> <label for="zip">(Zip code)</label></td></b>
+                     
+                    <td><b><label for="gyn">OB/Gyn:</label></b>
+                    <input type="text" id="gyn" name="Gyn"> </td>
+                    
+                    <td><b><label for="gyn2">OB/Gyn:</label></b>
+                    <input type="tel" id="gyn2" name="Gyn2"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><b><label for="infant">Infants Name:</label></b>
+                    <input type="text" id="infant" name="name"> </td>
+    
+                    <td><b><label for="no">Chart No:</label></b>
+                    <input type="text" id="no" name="chartno"> </td>
+    
+                    <td><b><label for="del">Delivering Physician:</label></b>
+                    <input type="text" id="del" name="delivery"> </td>
+    
+                    <td><b><label for="Phone">Phone No:</label></b>
+                    <input type="tel" id="Phone" name="phoneno"> </td>
+                </tr>
+
+                <tr>    
+                    <td colspan="2"><b><label for="ped">Pediatrician:</label></b>
+                    <input type="text" id="ped" name="Pediatrician"> </td>
+    
+                    <td><b><label for="phone2">Phone No: </label></b>
+                    <input type="tel" id="phone2" name="Phone"> </td>
+    
+                    <td colspan="2"><b><label for="hos">Delivering Hospital: </label></b>
+                    <input type="text" id="hos" name="Hospital" size="30"> </td>
+                </tr>
+                <tr>
+                    <td colspan="5">– Patient identifier information is not transmitted to CDC – </td>
+                </tr>
+                </Table>
+                <h3 class="head3"  class="head3" style="background-color: #d673c9; font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">CONGENITAL SYPHILIS (CS) CASE INVESTIGATION AND REPORT</h3>
+                <table>
+                    <div class="table">
+                    <tr>
+                        <td colspan="1"><b><label for="report"><li class="list-main">Report date to health dept</li></label></b>
+                        <input type="date" id="report" name="report"></td>
+
+                        <td colspan="2"><b><label for="reporting"><li class="list-main">Reporting state FIPS code:</li></label></b>
+                        <input type="text" id="reporting" name="report" size="6">
+
+                        <input type="text" id="state" name="report-state"><br/>
+                       <b><label for="stste">Reporting State Name</label></td></b> 
+
+                        <td colspan="2"><b><label for="Country"><li class="list-main">Reporting county FIPS code:</li></label></b>
+                        <input type="text" id="Country" name="country">
+
+                        <input type="text" id="rena" name="report-name"><br/>
+                      <b><label for="rena">Reporting County Name</label></td></b>  
+                    </tr>
+                    <tr>
+
+                        <!--PART I-->
+                        <td colspan="3"><label><h4 style="background-color: #d673c9; margin-top: 0px; padding: 9px; width: 400px;">Part I. Maternal InforMatIon</h4></label>
+
+                        <b><label for="code"><li class="list-main"> Mother’s state FIPS code:</li></label></b>
+                        <input type="text" id="code" name="fips-code">  <input type="text" id="res" name="residence"><br/>
+                        <b><label for="res" style="padding-left: 180px;">Mother’s Residence State</label></b></td>
+
+                        <td colspan="2"><br/><br/>
+                       <b> <label for="mores"><li class="list-main"> Mother’s Country of residence</li></label></b>
+                        <input type="text" id="mores" name="residence" size="16">  <input type="text" size="36" ><br/>
+                        <b><label><i>(leave blank if USA) </i></label></b>
+                       <b><label style="padding-left: 100px;">Mother’s Country of residence</label></b> 
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><b><label for="fips"><li class="list-main">Mother’s residence county FIPS code:</li></label></b>
+                        <input type="text" id="fips" name="FIPS" size="15">  <input type="text" id="cou" name="country" size="17"><br/>
+                       <b> <label for="cou" style="padding-left: 100px;">Mother’s County of Residence</label></b></td>
+
+                        <td>
+                        <b><label for="zic"><li class="list-main"> Mother’s residence ZIP code:</li></label></b> 
+                        <input type="text" id="zic" name="ZIP" size="6"></td>
+
+                        <td>
+                       <b><label for="zic2"><li class="list-main"> Mother’s residence ZIP code:</li></label></b> 
+                        <input type="date" id="zic2" name="ZIP"> 
+                    </td>
+
+                    <td>
+                       <b> <label><li class="list-main"> Mother’s obstetric history:</li></label></b> 
+                       <label for="G">G</label> <input type="text" id="G" name="obstetric" size="9">  
+                       <label for="P">P</label> <input type="text" id="P" name="obstetric2" size="9"><br/>
+                        <label style="padding-left: 20px;">(G=pregnancies, P=live births)</label></b> 
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="">
+                           <b><label for="date1"><li class="list-main">Last menstrual period (LMP) (before delivery):</li></label></b> 
+                            <input type="date" id="date1" name="date"> 
+                        </td>
+                        
+                        <td colspan="4">
+                            <b><label for="period"> <li> a) Last menstrual period (LMP) (before delivery):</li></ol></label></b>
+                            <input type="date" id="period" name="date"> 
+
+                            <input type="checkbox" id="last" name="menstrual-period" value="No">
+                            <b><label for="last">No prenatal care (Go to Q12)</label></b>
+
+                            <input type="checkbox" id="las" name="menstrual-period" value="Unk">
+                            <label for="las">Unk</label><br/>
+
+                           <b><label>b) Indicate trimester of first prenatal visit:</label></b>
+
+                            <input type="checkbox" id="ist" name="trimester" value="ist-trimester">
+                           <b> <label for="ist">1st trimester</label></b>
+
+                            <input type="checkbox" id="nd" name="trimester" value="nd-trimester">
+                           <b> <label for="nd">2nd trimester</label></b>
+
+                            <input type="checkbox" id="rd" name="trimester" value="rd-trimester">
+                           <b><label for="rd">3rd trimester</label></b>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="moth"><li>Mother’s ethnicity:</li></ol></label>
+                            <input type="checkbox" id="moth" name="mother-ecthnicity" value="Hispanic-or Latino">
+                            <label>Hispanic or Latino</label>
+
+                            <input type="checkbox" id="non" name="mother-ecthnicity" value="Non-Hispanic">
+                            <label for="non">Non-Hispanic or Latino </label>
+
+                            <input type="checkbox" id="nk" name="Unk" value="Unk">
+                            <label for="nk">Unk</label><br/>
+
+                            
+                        </td>
+
+                        <td colspan="3">
+                            <label for="mrace"><li>Mother’s race: (check all that apply)</li></ol></label>
+                            <input type="checkbox" id="mrace" name="mother-race" value="Asian">
+                            <label>Asian</label>
+
+                            <input type="checkbox" id="nat" name="mother-race" value="Native-Hawaiian">
+                            <label for="nat">Native Hawaiian or Other Pacific Islander </label>
+
+                            <input type="checkbox" id="ame" name="mother-race" value="American-idian">
+                            <label for="ame"> American Indian/Alaska Native</label>
+
+                            <input type="checkbox" id="whi" name="mother-race" value="White">
+                            <label for="whi">White </label>
+
+                            <input type="checkbox" id="bla" name="mother-race" value="Black-african">
+                            <label for="bla">Black or African American </label>
+
+                            <input type="checkbox" id="othe" name="mother-ecthnicity" value="other">
+                            <label for="othe">Other</label>                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><li>Did mother have non-treponemal or treponemal tests at:</li>
+                            a) first prenatal visit?  
+                            <input type="checkbox" id="ye" name="treponemal" value="yes">
+                            <label for="ye">Yes</label>
+
+                            <input type="checkbox" id="not" name="treponemal" value="no">
+                            <label for="not">No</label> <br/> 
+                            
+                            b) 28–32 weeks gestation? 
+                            <input type="checkbox" id="ye2" name="treponemal" value="yes">
+                            <label for="ye2">Yes</label>  
+
+                            <input type="checkbox" id="no2" name="treponemal" value="no">
+                            <label for="no2">No</label><br/> 
+
+                            c) delivery?
+                            <input type="checkbox" id="ye3" name="treponemal" value="yes">
+                            <label for="ye3">Yes</label>    
+
+                            <input type="checkbox" id="no3" name="treponemal" value="no">
+                            <label for="no3">No</label>                                                           
+                        </td>
+
+                        <td colspan="2"><li>Mother’s marital status:</li>
+                            <input type="checkbox" id="sing" name="marital-status" value="Single">
+                            <label for="sing">Single, never married</label> 
+
+                            <input type="checkbox" id="mar" name="marital-status" value="married">
+                            <label for="mar">Married</label> <br/> 
+
+                            <input type="checkbox" id="Sep" name="marital-status" value="Separated">
+                            <label for="sep">Separated/Divorced</label>  
+
+                            <input type="checkbox" id="wid" name="marital-status" value="Widow">
+                            <label for="wid">Widow</label> <br/> 
+
+                            <input type="checkbox" id="oth1" name="marital-status" value="Other">
+                            <label for="oth1">Other</label>                          
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><li> Indicate during pregnancy and delivery, dates and results of a) most recent and <br/> b) first non-treponemal tests:</li><br/>
+
+                            <b><label for="dat2" style="padding-left: 30px;">Date</label> </b>
+                            <b  style="padding-left: 80px;">Results </b>  
+                            <b  style="padding-left: 60px;">Titer</b><br/>
+
+                            <input type="date" id="dat2" name="Indicate"> 
+
+                            <input type="checkbox" id="rea" name="Indicate" value="reactive">
+                            <label id="rea">Reactive</label> 
+
+                            <input type="checkbox" id="nonr" name="Indicate" value="non-reactivated">
+                            <label for="nonr">Nonreactived</label> <br/>
+
+
+                            <input type="date" id="dat2" name="Indicate"> 
+
+                            <input type="checkbox" id="rea" name="Indicate" value="reactive">
+                            <label id="rea">Reactive</label> 
+
+                            <input type="checkbox" id="nonr" name="Indicate" value="non-reactivated">
+                            <label for="nonr">Nonreactived</label>
+                        </td>
+                    
+                        <td colspan="2"><b><li>. What was mother’s HIV status during pregnancy?</li></b>
+                            <input type="checkbox">
+                            <label>positive</label><br/>     
+                            <input type="checkbox">
+                            <label>patient not tested </label> <br/> 
+                            <input type="checkbox">
+                            <label>equivocal test</label> <br/>    
+                            <input type="checkbox">
+                            <label>negative</label>                                                    
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><b><li>Indicate during pregnancy, date, type, and result of a) first and b) most recent treponemal tests:</li></b>
+                            <b style="padding-left: 40px;"> Date</b>
+                            <b style="padding-left: 130px; word-spacing: 10px;">Test - Type</b>
+                            <b style="padding-left: 180px;">Results</b><br/>
+
+                            <input type="date"> 
+
+                            <input type="checkbox">
+                            <label>EIA or CLIA</label>
+
+                            <input type="checkbox">
+                            <label>TP-PA</label>  
+
+                            <input type="checkbox">
+                            <label>Other</label>  
+
+                            <input type="checkbox">
+                            <label>Unk</label>  
+
+                            <input type="checkbox">
+                            <label>Reactive</label> 
+
+                            <input type="checkbox">
+                            <label>Nonreactive</label> <br/> 
+
+                            <input type="date"> 
+                            <input type="checkbox">
+                            <label>EIA or CLIA</label>
+
+                            <input type="checkbox">
+                            <label>TP-PA</label>
+
+                            <input type="checkbox">
+                            <label>Other</label> 
+
+                            <input type="checkbox">
+                            <label>Unk</label>  
+
+                            <input type="checkbox">
+                            <label>Reactive</label> 
+
+                            <input type="checkbox">
+                            <label>Nonreactive</label> 
+                        </td>
+                        
+                        <td colspan="2">
+                            <b><label><li>What CLINICAL stage of syphilis did mother have during pregnancy?</li></label></b>
+                            <input type="checkbox" id="cli" name="clinical-stage" value="primary">
+                            <label for="cli">primary</label>
+
+                            <input type="checkbox" id="che" name="clinical-stage" value="secondary">
+                            <label for="che">secondary </label>
+
+                            <input type="checkbox" id="ear" name="clinical-stage" value="early-latent">
+                            <label for="ear"> early latent</label>
+
+                            <input type="checkbox" id="lat" name="clinical-stage" value="late">
+                            <label for="lat"> late or late latent </label><br/>
+
+                            <input type="checkbox" id="pre" name="clinical-stage" value="previously">
+                            <label for="pre">previously treated/serofast </label>
+
+                            <input type="checkbox" id="ert" name="clinical-stage" value="other">
+                            <label for="ert">Other</label> <br/><br/>
+                            
+                            
+                           <b><label><li>What SURVEILLANCE stage of syphilis did mother have
+                                during pregnancy? (Footnote A)</li></label></b>
+
+                            <input type="checkbox" id="pri" name="surveillance" value="primary">
+                            <label for="pri">primary</label>
+
+                            <input type="checkbox" id="sec" name="surveillance" value="secondary">
+                            <label for="sec">secondary </label>
+
+                            <input type="checkbox" id="earla" name="surveillance" value="early-latent">
+                            <label for="earla"> early latent</label>
+
+                            <input type="checkbox" id="latt" name="surveillance" value="late-or-late-latent">
+                            <label for="latt"> late or late latent </label><br/>
+
+                            <input type="checkbox" id="prev" name="surveillance" value="previously">
+                            <label for="prev">previously treated/serofast </label>
+
+                            <input type="checkbox" id="che" name="surveillance" value="other">
+                            <label for="che">Other</label>
+                        </td>
+                    </tr>
+                    <td colspan="1"><b><label><li>When did mother receive her first dose of benzathine penicillin?</li></ol></label></b>
+
+                    <input type="date"><br/>
+                    <input type="checkbox" id="bef" name="benzathine" value="before">
+                    <label for="bef"> Before pregnancy</label>
+
+                    <input type="checkbox" id="tri" name="benzathine" value="ist-trimester">
+                    <label for="tri">1st trimester  </label><br/>
+
+                    <input type="checkbox" id="mes" name="benzathine" value="2nd-trimester">
+                    <label for="mes">2nd trimester</label>
+
+                    <input type="checkbox" id="mester" name="benzathine" value="3rd-trimester">
+                    <label for="mester"> 3rd trimester</label><br/>
+
+                    <input type="checkbox" id="treat" name="benzathine" value="no-treatment">
+                    <label for="treat">No Treatment (Go to Q24)</label>
+
+                    <input type="checkbox" id="ben" name="benzathine" value="other">
+                    <label for="ben">Other</label>
+                </td>
+
+                    <td colspan="2"><b><label><li>Did mother have an appropriate serologic response? (Footnote B)</li></ol></label></b>
+
+                    <input type="checkbox" id="uni" name="serologic" value="2.4units">
+                    <label for="uni"> 2.4 M units benzathine penicillin</label><br/>
+    
+                    <input type="checkbox" id="unit" name="serologic" value="4.8units">
+                    <label for="unit"> 4.8 M units benzathine penicillin </label><br/>
+    
+                    <input type="checkbox" id="units" name="serologic" value="7.2units">
+                    <label for="units">7.2 M units benzathine penicillin</label><br/>
+    
+                    <input type="checkbox" id="eck" name="serologic" value="other">
+                    <label for="eck"> Other</label></td><br/>
+
+                    <td colspan="2"><b><label><li> Did mother have an appropriate serologic response? (Footnote B)</li></ol></label></b>
+                        <input type="checkbox" id="app" name="response" value="yes">
+                        <label for="app"> Yes, appropriate response</label><br/>
+        
+                        <input type="checkbox" id="ina" name="respond" value="no">
+                        <label for="ina">No, inappropriate response: evidence of treatment failure or reinfection</label><br/>
+        
+                        <input type="checkbox" id="resp" name="respond" value="response">
+                        <label for="resp">Response could not be determined from available non-treponemal titer information </label><br/>
+        
+                        <input type="checkbox" id="enou" name="respond" value="not enough">
+                        <label for="enou">Not enough time for titer to change</label></td><br/>
+                    </td>
+                    </tr>
+
+                    <tr>
+                       <td><b><label> II. Infant/ChIld InformatIon</label></b><br/><br/>
+
+                       <b> <label for="deli"><li>Date of Delivery:</li></label></b>
+                        <input type="date" id="deli" name="infant-info">
+                        </td>
+                        
+                       <b> <td colspan="2"><li>Vital status:</li></b>
+                        <input type="checkbox" id="ali" name="infant-info" value="alive">
+                        <label for="ali">Alive (Go to Q27)</label><br/>
+
+                        <input type="checkbox" id="born" name="infant-info" value="born alive">
+                        <label for="born">Born alive, then died</label><br/>
+
+                        <input type="checkbox" id="still" name="infant-info" value="stillborn">
+                        <label for="still">Stillborn (Go to Q27) (Footnote C)</label><br/>
+
+                        <input type="checkbox" id="unkn" name="infant-info" value="Unknown">
+                        <label for="unkn">Unknown (Go to Q27)</label></td>
+
+                        <td><b><label for="ind"><li>Indicate date of death:</li></label></b>
+                        <input type="date" id="ind" name="Indicate"></td>
+
+                        <td><b><label for="bir"><li>Birthweight (in grams): </li></label></b>
+                        <input type="text" id="bir" name="Birthweight"></td>
+                    </tr>
+                        <td><b><li>. Estimated gestational age (in weeks): </li></b>
+                        <input type="text"><br/>
+                        <i>(If infant was stillborn go to Q37)</i></td>
+
+                        <td colspan="4">
+                            <div style="display: flex;">
+                           <p><li>a) Did infant/ child have a reactive
+                             non-treponemal test for syphilis?
+                            (eg., VDRL, RPR) </li></p> 
+                            <p>b) When was the infant/child’s
+                            first reactive non-treponemal
+                             test for syphilis? </p>
+                            <p>c) Indicate titer of infant/
+                            child’s non-treponemal test
+                            or syphilis:</p> </div><br>
+
+                            <input type="checkbox" id="lay" name="syphilis-test" value="yes">
+                            <label for="lay">Yes</label>
+
+                            <input type="checkbox" id="nol" name="syphilis-test" value="no">
+                            <label for="nol">No</label>
+
+                            <input type="checkbox" id="put" name="syphilis-test" value="no-test">
+                            <label for="put">No test</label>
+
+                            <input type="date">
+
+                            <label for="bel">1:</label>
+                            <input type="text" id="bel" name="syphilis-test">
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td colspan="2"><b><li> a) Did infant/child have a reactive treponemal test for syphilis?
+                        (footnote D)</li></b>
+
+                        <input type="checkbox" id="lal" name="treponemal-test" value="yes">
+                        <label for="lal">Yes</label>
+
+                        <input type="checkbox" id="noch" name="treponemal-test" value="no">
+                        <label for="noch">No</label>
+
+                        <input type="checkbox" id="tesno" name="treponemal-test" value="no-test">
+                        <label for="tesno">No test</label><br/>
+
+                        <b><p>b) When was the infant/child’s first reactive treponemal test
+                            for syphilis? (footnote D)</b> 
+                        <input type="date"></p></td>
+
+                        <td colspan="3"><b><li>Did the infant/child, placenta, or cord have darkfield exam, DFA, or special stains?</li></b>
+
+                            <input type="checkbox" id="pos" name="placenta" value="positive">
+                            <label for="pos">Yes, positive</label>
+    
+                            <input type="checkbox" id="negs" name="placenta" value="negative">
+                            <label for="negs">Yes, negative</label>
+    
+                            <input type="checkbox" id="est" name="placenta" value="no-test">
+                            <label for="est">No test</label><br/>
+
+                            <input type="checkbox" id="less" name="placenta" value="no-lesson"> 
+                            <label for="less">No lesions and no tissue to test</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"><b><li>Did the Infant/child have any signs of CS? (check all that apply)</li></b>
+
+                        <input type="checkbox" id="sign" name="signs" value="no-sign">
+                        <label for="sig">no signs/asymptomatic (Footnote E)</label>
+
+                        <input type="checkbox" id="con" name="signs" value="condyloma">
+                        <label for="con">condyloma lata</label>
+
+                        <input type="checkbox" id="snuf" name="signs" value="snuffles">
+                        <label for="snuf">snuffles</label>
+
+                        <input type="checkbox" id="syn" name="sign" value="syphilitic">
+                        <label for="syn">syphilitic skin rash</label>  
+                        
+                        <input type="checkbox" id="hepa" name="sign" value="hepatosplenomegaly">
+                        <label for="hepa">hepatosplenomegaly</label>
+
+                        <input type="checkbox" id="jan" name="signs" value="jaundice">
+                        <label for="jan">jaundice/hepatitis</label>
+
+                        <input type="checkbox" id="pse" name="signs" value="pseudo">
+                        <label for="pse"> pseudo paralysis </label><br/>
+                    
+                        <input type="checkbox" id="edema" name="signs" value="edema">
+                        <label for="edema">edema</label>
+
+                        <input type="checkbox" id="beput" name="signs" value="other">
+                        <label for="beput"> other </label></td>   
+                </tr>
+
+                <tr>
+                    <td colspan="3"><b><li>Did the infant/child have long bone X-rays?</li></b>
+                        <input type="checkbox" id="cha" name="bonex" value="changes">
+                        <label for="cha">Yes, changes consistent with CS</label>
+
+                        <input type="checkbox" id="cs" name="bonex" value="no-signs">
+                        <label for="cs">Yes, no signs of CS</label>
+
+                        <input type="checkbox" id="rays" name="bonex" value="X-rays">
+                        <label for="rays">No X-rays</label></td>
+
+                        <td colspan="2"><li>Did the infant/child have a CSF-VDRL?</li>
+
+                        <input type="checkbox" id="ret" name="bonex" value="reactive"> 
+                        <label for="ret">Yes, reactive </label>
+    
+                        <input type="checkbox" id="none" name="bonex" value="nonreactive">
+                        <label for="none">Yes, nonreactive</label>
+    
+                        <input type="checkbox" id="lest" name="bonex" value="no-test">
+                        <label for="lest">No test</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"><b><li>Did the infant/child have a CSF WBC count or CSF protein test? (Footnote F)</li></b>
+
+                        <input type="checkbox" id="cfs" name="protein-test" value="yes">
+                        <label for="cfs">Yes, CSF WBC count elevated  </label>
+    
+                        <input type="checkbox" id="ein" name="protein-test" value="yes">
+                        <label for="ein">Yes, CSF protein elevated</label>
+    
+                        <input type="checkbox" id="ele" name="protein-test" value="both">
+                        <label for="ele">both tests elevated</label>
+                    
+                        <input type="checkbox" id="ype" name="protein-test" value="neither">
+                        <label for="ype"> neither test elevated</label>
+    
+                        <input type="checkbox" id="td" name="protein-test" value="no-test">
+                        <label for="td"> No test</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"><b><li>Was the infant/child treated? (“2” is an obsolete response)</li></b>
+                        <input type="checkbox" id="with" name="treated" value="yes">
+                        <label for="with">Yes, with aqueous or procaine penicillin for 10 days </label>
+    
+                        <input type="checkbox" id="zat" name="treated" value="yes">
+                        <label for="zat">Yes, with benzathine penicillin x 1</label>
+    
+                        <input type="checkbox" id="ment" name="treated" value="yes">
+                        <label for="ment">Yes, with other treatment</label>
+                    
+                        <input type="checkbox" id="tre" name="treated" value="no">
+                        <label for="tre"> No treatment</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"><h5 style="background-color: #d673c9; margin-top: 0px; padding: 9px; width: 400px;">Part II. Infant/ChIld InforMatIon</h5></label>
+
+                        <li><b>Classification:</li></b>
+                        <input type="checkbox" id="putin" name="information" value="not">
+                        <label for="putin">Not a case </label>
+    
+                        <input type="checkbox" id="conf" name="information" value="confirmed">
+                        <label for="conf">Confirmed case</label>
+    
+                        <input type="checkbox" id="syp" name="information" value="syphilitic">
+                        <label for="syp">Syphilitic stillbirth</label>
+                    
+                        <input type="checkbox" id="pro" name="information" value="Probable">
+                        <label for="pro">Probable case</label>
+                    <div>
+                    <p>(Laborator y confirmed identification of T.pallidum, e.g., darkfield exam, DFA, or special stains)  (Footnote C )</p>
+            <p>(A case identified by the algorithm, which is not a confirmed case or syphilitic stillbir th)</p></div></td>
+                </tr>
+
+                <tr>
+                    <td colspan="5">Public repor ting burden of this collection of information is estimated to average 30 minutes per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, and completing and reviewing the collection of information. An agency may not conduct or sponsor, and a person is not required to respond to a collection of information
+                        unless it displays a currently valid OMB control number. Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing this burden to CDC/ATSDR Reports Clearance Officer, 1600 Clifton Road, MS D-74, Atlanta, GA 30333, ATTN: PRA (0920-0128). Do not send the completed form to this address.</td>
+                </tr>
+                </table>                 
+                            
+                            
+
+                    <input type="submit" value="submit" name="submit"  style="  
+                    margin-left: 400px;
+                    margin-top: 20px;
+                    margin-bottom: 20PX;
+                    width: 10%;
+                    padding: 10px;
+                    background-color: #ee0bd0;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    color: white;">
+            </form>
+          
+        </article>
+    </section>
+
+
+</body>
+
+</html>

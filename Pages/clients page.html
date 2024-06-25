@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name ="keyword" content="HTML 5, CSS 3, JavaScript, JOuery, Angularjs"/>
+<meta name="description" content=" Dynamic web developrment">
+<meta name ="author" content="mildred">
+<meta name=" viewport" content ="width=device-width, initial-scale=1.0">
+<title> float layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../Css/CSS.css">
+<style>
+
+.side-nav {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    height: 600px;
+}
+
+.side-nav a {
+    margin-top: 10px;
+    background-color: #ccc;
+    width: 280px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    border-radius: 3%;
+}
+.side-nav a:hover{
+    background-color:#ee0bd0;
+}
+.side-nav a:hover{
+    color: white;
+}
+    
+    
+</style>
+</head>
+
+<body> 
+        <nav class="topnav">
+            <ul>
+                <li><a href="../Pages/registeration.html">Register</a></li>
+                <li><a href="../Pages/clients page.html">Home</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <section class="row">            
+            <nav class="col-4" id="sidenav-container">
+                <div class="side-nav">                
+                
+                    <a href="../Pages/personalinfo.html">Personal Information</a>
+                    <a href="../Pages/riskfactors.html">Risk Factor Information</a>
+                    <a href="../Pages/hepb_form.html">Hepatitis B Pregnant Women Reporting</a>
+                    <a href="../Pages/cong_syphillis.html">Congenital Syphilis Form</a>
+                    <a href="../Pages/sti.html">Chlamydia & Gonorrhea case reporting</a>
+                    
+                </div>
+            </nav>
+        
+
+            <article class="col-8">
+                <div class="content-client">
+                   <div><h2>Welcome to the Dashboard</h2></div> 
+                    
+                </div>
+            </article>
+        </section>
+</body>
+
+</html>
