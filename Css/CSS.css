@@ -63,6 +63,13 @@
 li{
     list-style: none;
 }
+.login_container{
+    background-image: url(../Image/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 632px;
+    margin: -8px;  
+}
 
 .login-box{
     width: 350px;
@@ -72,7 +79,7 @@ li{
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255,255,255,);
+    background-color: rgba(255,255,255,0.5);
     height: 400px;
 }
 .login-info{
@@ -86,33 +93,38 @@ li{
     margin-top: 20px;
     width: 50%;
     padding: 10px;
-    background-color: #ee0bd0;
+    background-color: #057755;
     color: white;
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 .login-box input[type="submit"]:hover{
     background-color: #97d5dd;
 }
 
-.topnav{
-   
+.topnav{  
+    position: relative; 
     top:0;
     left:0;
     right:0;
-    height: 60px; 
+    height: 90px; 
     display: flex;
     justify-content: flex-end;
     background-color: #333;
     padding: 10px;
+    margin-top: -10px;
+    margin-left: -9px;
+    margin-right: -20px;
 }
 .topnav li{
     display: inline;
 }
 .topnav ul{
     list-style: none;
+    padding-top:15px;
 }
 
 .topnav a{
@@ -133,18 +145,20 @@ li{
 .reg-head{
     text-align: center;
     font-size: 20px;
+    
+    margin-top: -30px;
+    position: relative;
 }
 .registration-container{
 
     width: 500px;
     margin-left: 20%;
-    margin-top: 0%;
+    margin-top: 4%;
     padding: 40px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255,255,255,0.6);
-    
+    background-color: rgba(255,255,255,0.6);    
 }
 
 .registration-container table {
@@ -170,7 +184,7 @@ li{
 .registration-container input[type="submit"]{
     width: 100%;
     padding: 10px;
-    background-color: #ee0bd0;
+    background-color: #057755;
     color: white;
     border: none;
     border-radius: 5px;
@@ -209,7 +223,9 @@ li{
     display: block;   
     color: #333;
     text-decoration: none;
-    font-weight: bold; 
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
 }
 .side-nav li:hover{
     background-color:#ee0bd0;
@@ -217,17 +233,33 @@ li{
 .side-nav a:hover{
     color: white;
 }
-.content-client {
-   font-size: 20px;
-   background-color: #ee0bd0;  
-   padding: 30px;
+
+.fa-times,.fa-user, .fa-medkit,.fa-user-plus, .fa-check-square{
+    color: white;
+    padding-right: 5px;
+    position: relative;
+}
+
+.client_h2 {
+   font-size: 34px;
+   background-color: rgba(6, 68, 34, 0.5);  
+   padding: 60px;
    text-align: center;
-   width: 800px;
-   margin: 20px;
+   width: 1064px;
+   margin-left: -19%; 
+   margin-top: -2%; 
    color: white;
+   position: relative;
+}
+.client_body{
+    margin-left:-19%;
+    margin-top: -3.5%;
+    position:relative;
+    
+    
 }
 
 .head3{
-    background-color: #d673c9; font-size: 20px; margin: 0px; height: 40px; padding-top: 10px; text-align: center;
+    background-color: #057755; color: white;; font-size: 20px; margin: 0px; height: 40px; padding-top: 10px; text-align: center;
 }
 

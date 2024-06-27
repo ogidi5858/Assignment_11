@@ -34,38 +34,45 @@ li::before{
 }
 
 .side-nav {
-    width: 220px;
-    background-color: #f4f4f4;
+    width: 236px;
+    background-color: #333;
     padding: 10px;
     border-right: 1px solid #ccc;
-    height: 600px;
+    height: 577px;
+    margin: -9%;
 }
 
 .side-nav a {
-    margin-top: 10px;
-    background-color: #ccc;
-    width: 200px;
+    margin-top: 10px;   
+    width: 280px;
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
     margin-right: 15px;
     border-radius: 3%;
-}
-.side-nav a:hover{
-    background-color:#ee0bd0;
-}
-.side-nav a:hover{
     color: white;
+}
+.side-nav a:hover{
+    background-color:antiquewhite;
+    border-radius: 4%;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.side-nav a:hover{
+    color: black;
+    font-size: 14px;
+    width: 250px;
 }
 
 
 </style>
 </head>
 
-<body>
+<body style="background-image: url(../Image/cong.jpg); background-size: 1800px; background-repeat: no-repeat;">
     <nav class="topnav">
         <ul>
+            <a href="../Pages/registeration.html">Register</a>
             <a href="../Pages/clients page.html">Home</a>
             <a href="../index.html">Logout</a>
         </ul>
@@ -75,19 +82,19 @@ li::before{
         <nav class="col-2">
             <div class="side-nav">                
                 
-                <a href="../Pages/personalinfo.html">Personal Information</a>
-                <a href="../Pages/riskfactors.html">Risk Factor Information</a>
-                <a href="../Pages/hepb_form.html">Hepatitis B Pregnant Women Reporting</a>
-                <a href="../Pages/cong_syphillis.html">Congenital Syphilis Form</a>
-                <a href="../Pages/sti.html">Chlamydia & Gonorrhea case reporting</a>
+                <a href="../Pages/personalinfo.html" style=" margin-top: 20%;"><i class="fa fa-user" aria-hidden="true"></i> Personal Information</a>
+                    <a href="../Pages/riskfactors.html"><i class="fa fa-times" aria-hidden="true"></i> Risk Factor Information</a>
+                    <a href="../Pages/hepb_form.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Hepatitis B Pregnant Women &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporting</a>
+                    <a href="../Pages/cong_syphillis.html"><i class="fa fa-medkit" aria-hidden="true"></i> Congenital Syphilis Form</a>
+                    <a href="../Pages/sti.html"><i class="fa fa-check-square" aria-hidden="true"></i> Chlamydia & Gonorrhea Case &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporting</a>
                 
             </div>
         </nav>
 
-        <article class="col-10">
+        <article class="col-10" style="position: relative; background-color: rgba(255,255,255,0.8);">
             <h2 style="text-align: center;">CONGENITAL SYPHILIS (CS) CASE INVESTIGATION AND REPORT </h2>
             <form method="post" action="" autocomplete="off" class="form-container">
-                <h3 class="head3"  class="head3" style="background-color: #d673c9; font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">Clinic Information:</h3>                
+                <h3 class="head3"  class="head3" style="background-color: #057755; color: white; font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">Clinic Information:</h3>                
                 <Table class="table-box" >
                     <tr><td colspan="6"></td></tr>
                     <tr>
@@ -144,7 +151,7 @@ li::before{
                     <td colspan="5">– Patient identifier information is not transmitted to CDC – </td>
                 </tr>
                 </Table>
-                <h3 class="head3"  class="head3" style="background-color: #d673c9; font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">CONGENITAL SYPHILIS (CS) CASE INVESTIGATION AND REPORT</h3>
+                <h3 class="head3"  class="head3" style="background-color: #057755; color: white;  font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">CONGENITAL SYPHILIS (CS) CASE INVESTIGATION AND REPORT</h3>
                 <table>
                     <div class="table">
                     <tr>
@@ -166,7 +173,7 @@ li::before{
                     <tr>
 
                         <!--PART I-->
-                        <td colspan="3"><label><h4 style="background-color: #d673c9; margin-top: 0px; padding: 9px; width: 400px;">Part I. Maternal InforMatIon</h4></label>
+                        <td colspan="3"><label><h4 style="background-color: #057755; color: white; margin-top: 0px; padding: 9px; width: 400px;">Part I. Maternal InforMatIon</h4></label>
 
                         <b><label for="code"><li class="list-main"> Mother’s state FIPS code:</li></label></b>
                         <input type="text" id="code" name="fips-code">  <input type="text" id="res" name="residence"><br/>
@@ -666,7 +673,7 @@ li::before{
                 </tr>
 
                 <tr>
-                    <td colspan="5"><h5 style="background-color: #d673c9; margin-top: 0px; padding: 9px; width: 400px;">Part II. Infant/ChIld InforMatIon</h5></label>
+                    <td colspan="5"><h5 style="background-color: #057755; color: white; margin-top: 0px; padding: 9px; width: 400px;">Part II. Infant/ChIld InforMatIon</h5></label>
 
                         <li><b>Classification:</li></b>
                         <input type="checkbox" id="putin" name="information" value="not">
@@ -699,7 +706,7 @@ li::before{
                     margin-bottom: 20PX;
                     width: 10%;
                     padding: 10px;
-                    background-color: #ee0bd0;
+                    background-color: #057755;
                     color: white;
                     border: none;
                     border-radius: 5px;

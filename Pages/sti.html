@@ -26,37 +26,43 @@
 
 .side-nav {
     width: 300px;
-    background-color: #f4f4f4;
+    background-color: #333;
     padding: 10px;
     border-right: 1px solid #ccc;
-    height: 600px;
+    height: 577px;
+    margin: -9%;
 }
 
 .side-nav a {
-    margin-top: 10px;
-    background-color: #ccc;
-    width: 270px;
-    padding-left: 15px;
+    margin-top: 10px;   
+    width: 280px;
+    padding-left: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
     margin-right: 15px;
     border-radius: 3%;
-}
-.side-nav a:hover{
-    background-color:#ee0bd0;
-}
-.side-nav a:hover{
     color: white;
+}
+.side-nav a:hover{
+    background-color:antiquewhite;
+    border-radius: 4%;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.side-nav a:hover{
+    color: black;
+    font-size: 17px;
 }
 
 
 </style>
 </head>
 
-<body>
+<body style="background-image: url(../Image/sti.jpg); background-size: 1400px; background-repeat: no-repeat;">
     <nav class="topnav">
         <ul>
+            <li><a href="../Pages/registeration.html">Register</a></li>
             <li><a href="../Pages/clients page.html">Home</a></li>
             <li><a href="../index.html">Logout</a></li>
         </ul>
@@ -66,21 +72,21 @@
         <nav class="col-3">
             <div class="side-nav">             
                 
-                <a href="../Pages/personalinfo.html">Personal Information</a>
-                <a href="../Pages/riskfactors.html">Risk Factor Information</a>
-                <a href="../Pages/hepb_form.html">Hepatitis B Pregnant Women Reporting</a>
-                <a href="../Pages/cong_syphillis.html">Congenital Syphilis Form</a>
-                <a href="../Pages/sti.html">Chlamydia & Gonorrhea case reporting</a>            
+                <a href="../Pages/personalinfo.html" style=" margin-top: 20%;"><i class="fa fa-user" aria-hidden="true"></i> Personal Information</a>
+                <a href="../Pages/riskfactors.html"><i class="fa fa-times" aria-hidden="true"></i> Risk Factor Information</a>
+                <a href="../Pages/hepb_form.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Hepatitis B Pregnant Women &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporting</a>
+                <a href="../Pages/cong_syphillis.html"><i class="fa fa-medkit" aria-hidden="true"></i> Congenital Syphilis Form</a>
+                <a href="../Pages/sti.html"><i class="fa fa-check-square" aria-hidden="true"></i> Chlamydia & Gonorrhea Case &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporting</a>            
         </div>
         </nav>
 
         <article class="col-9">
-            <h2 style="text-align: center;">STI Case Report Form For Chlamydia and Gonorrhea</h2>
+            <h2 style="text-align: center; font-size: 30px;">STI Case Report Form For Chlamydia and Gonorrhea</h2>
             <form method="post" action="" autocomplete="off" class="form-container">
                 
-                <Table class="table-box" style="border: solid 1px;">
+                <Table class="table-box" style="border: solid 1px;background-color: rgba(255,255,255,0.8);">
 
-                    <tr><td colspan="5"><h3  class="head3" style="background-color: #d673c9; font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">Clinic Information:</h3></td></tr>
+                    <tr><td colspan="5"><h3  class="head3" style="background-color: #057755; color: white; font-size: 25px; margin: 0px; height: 50px; padding-top: 10px; text-align: center;">Clinic Information:</h3></td></tr>
 
                     <!--first details-->
                     <tr>
@@ -105,7 +111,7 @@
                     prefer you may call to report the required information. We appreciate your cooperation and prompt handling of this confidential report.</P>
 
                     
-                    <table>
+                    <table style="background-color: rgba(255,255,255,0.9);">
                         <tr><td colspan="7"><h3 class="head3" >Patient Information — Please complete all information requested below</h3></td></tr>
                         <tr>
                             <td colspan="2"><b><label for="name">NAME:</label></b><br/>
@@ -345,8 +351,8 @@
                     </tr>
 
                     <tr>
-                        <th colspan="3" style="background-color:  #d673c9;">Alternative Treatment Regimens</th>
-                        <th colspan="4" style="background-color:  #d673c9;">Alternative Treatment Regimens<br/></th>
+                        <th colspan="3" style="background-color: #057755; color: white;">Alternative Treatment Regimens</th>
+                        <th colspan="4" style="background-color: #057755; color: white;">Alternative Treatment Regimens<br/></th>
                     </tr>
                     
                     <tr>
@@ -403,7 +409,7 @@
                     </tr>
 
                     <tr>
-                        <th colspan="7" style="background-color: #d673c9;">PARTNER MANAGEMENT PLAN — Ensuring Partner Treatment</th>
+                        <th colspan="7" style="background-color: #057755; color: white;">PARTNER MANAGEMENT PLAN — Ensuring Partner Treatment</th>
                     </tr>
 
                     <tr>
@@ -447,7 +453,7 @@
                     margin-bottom: 20PX;
                     width: 10%;
                     padding: 10px;
-                    background-color: #ee0bd0;
+                    background-color: #057755;
                     color: white;
                     border: none;
                     border-radius: 5px;
