@@ -7,23 +7,11 @@
 <meta name="description" content=" Dynamic web developrment">
 <meta name ="author" content="mildred">
 <meta name=" viewport" content ="width=device-width, initial-scale=1.0">
-<title> float layout</title>
+<title> Risk factors</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="../Css/CSS.css">
 <style>
 
-.table-box{
-    border: solid 1px;
-    border-collapse: collapse;
-    width: 100%;
-    height: 100%;
-    text-align: left;
-}
-
-.table-box, th,td{
-    border: 1px solid rgb(160, 155, 155);  
-    padding: 7px;   
-}
 
 .side-nav {
     width: 300px;
@@ -31,7 +19,7 @@
     padding: 10px;
     border-right: 1px solid #ccc;
     height: 577px;
-    margin: -4.5%;
+    margin: -6.5%;
 }
 
 .side-nav a {
@@ -55,12 +43,51 @@
     color: black;
     font-size: 17px;
 }
+
+
+.container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+        border: 1px solid #b9b7b7;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        height: 1100px;      
+    }
+
+    .box, .box2 {
+        width: 48%;
+        height: 1070px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #e8e8e8;
+    }
+
+    .box h3, .box2 h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        padding: 10px;
+        margin:  0;
+        background-color: #cce5ff;
+        border-radius: 5px;
+        cursor: grab;
+        border: 1px rgb(155, 146, 146) solid;
+    }
+
+
     
     
 </style>
 </head>
 
-<body style="background-image: url(../Image/login.jpg); background-size: 1350px; background-repeat: no-repeat;"> 
+<body style="background-image: url(../Image/login.jpg); background-size: 2070px; background-repeat: no-repeat;"> 
         <nav class="topnav">
             <ul>
                 <li><a href="../Pages/registeration.html">Register</a></li>
@@ -70,7 +97,7 @@
         </nav>
         
         <section class="row">            
-            <nav class="col-4" id="sidenav-container">
+            <nav class="col-3" id="sidenav-container">
                 <div class="side-nav">                
                 
                     <a href="../Pages/personalinfo.html" style=" margin-top: 20%;"><i class="fa fa-user" aria-hidden="true"></i> Personal Information</a>
@@ -83,107 +110,61 @@
             </nav>
         
 
-            <article class="col-8">
-                <div class="form-container" style="margin-top: 5%; background-color: rgba(255,255,255,0.9);">
+            <article class="col-9">
+               
                     <h2 style="text-align: center; font-size: 30px;">Risk Factor Information</h2>
-                    <form action="submit_risk_factor.html" method="post">
-                    <table class="table-box">
-                        <tr>                            
-                            <td colspan="2">
-                                <label for="sexual-activity">Sexual Activity:</label><br>
-                                <select id="sexual-activity" name="sexual-activity">
-                                  <option value="active">Active</option>
-                                  <option value="not-active">Not Active</option>
-                                </select>
-                        </td>
-                        <td>
-                            <label for="partners">Number of Sexual Partners:</label><br>
-                            <input type="number" id="partners" name="partners" placeholder="0">
-                        </td>
-
-                        <td><label for="protection">Use of Protection:</label><br>
-                            <select id="protection" name="protection">
-                              <option value="always">Always</option>
-                              <option value="sometimes">Sometimes</option>
-                              <option value="never">Never</option>
-                            </select></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2"><label for="std-history">History of STDs:</label><br>
-                            <input type="radio" id="std-yes" name="std-history" value="yes">
-                            <label for="std-yes">Yes</label><br>
-                            <input type="radio" id="std-no" name="std-history" value="no">
-                            <label for="std-no">No</label><br>
-                            <textarea id="std-details" name="std-details" placeholder="If yes, specify"></textarea></td>
-
-                            <td colspan="2"><label for="travel-history">Travel History:</label><br>
-                                <input type="radio" id="travel-yes" name="travel-history" value="yes">
-                                <label for="travel-yes">Yes</label><br>
-                                <input type="radio" id="travel-no" name="travel-history" value="no">
-                                <label for="travel-no">No</label><br>
-                                <textarea id="travel-details" name="travel-details" placeholder="If yes, specify regions"></textarea></td>
-                    </tr>
+                    <form action="../Pages/clients page.html" method="post">
+                        <div class="container">
+                            <div class="box" id="optionsBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <h3> Risk Factors Options</h3>
+                                <!-- List of items that can be dragged -->
+                                <div id="item1" class="item" draggable="true" ondragstart="drag(event)">Sexual Activity: Active</div>
+                                <div id="item2" class="item" draggable="true" ondragstart="drag(event)">Sexual Activity: Not Active</div>
+                                
+                                <div id="item4" class="item" draggable="true" ondragstart="drag(event)">Use of Protection: Always</div>
+                                <div id="item5" class="item" draggable="true" ondragstart="drag(event)">Use of Protection: Sometimes</div>
+                                <div id="item6" class="item" draggable="true" ondragstart="drag(event)">Use of Protection: Never</div>
+                                <div id="item7" class="item" draggable="true" ondragstart="drag(event)">History of STDs: Yes</div>
+                                <div id="item8" class="item" draggable="true" ondragstart="drag(event)">History of STDs: No</div>
+                                <div id="item9" class="item" draggable="true" ondragstart="drag(event)">Travel History: Yes</div>
+                                <div id="item10" class="item" draggable="true" ondragstart="drag(event)">Travel History: No</div>
+                                <div id="item11" class="item" draggable="true" ondragstart="drag(event)">Contact with Known STD Cases: Yes</div>
+                                <div id="item12" class="item" draggable="true" ondragstart="drag(event)">Contact with Known STD Cases: No</div>
+                                <div id="item13" class="item" draggable="true" ondragstart="drag(event)">Alcohol Intake: Yes</div>
+                                <div id="item14" class="item" draggable="true" ondragstart="drag(event)">Alcohol Intake: No</div>
+                                <div id="item15" class="item" draggable="true" ondragstart="drag(event)">Tobacco Use: Yes</div>
+                                <div id="item16" class="item" draggable="true" ondragstart="drag(event)">Tobacco Use: No</div>
+                                <div id="item17" class="item" draggable="true" ondragstart="drag(event)">History Of Sexual transmitted Disease</div>
+                                <div id="item18" class="item" draggable="true" ondragstart="drag(event)">Period of STD</div>
+                                <div id="item19" class="item" draggable="true" ondragstart="drag(event)">Contraceptive Use: Yes</div>
+                                <div id="item20" class="item" draggable="true" ondragstart="drag(event)">Contraceptive Use: No</div>
+                                <div id="item21" class="item" draggable="true" ondragstart="drag(event)">Exposure to Bloodborne Pathogens: Yes</div>
+                                <div id="item22" class="item" draggable="true" ondragstart="drag(event)">Exposure to Bloodborne Pathogens: No</div>
+                                <div id="item23" class="item" draggable="true" ondragstart="drag(event)">Sexual Practices</div>
+                                <div id="item24" class="item" draggable="true" ondragstart="drag(event)">Partner’s Risk Factors</div>
+                                <div id="item25" class="item" draggable="true" ondragstart="drag(event)">Previous Testing History</div>
+                            </div>
+                            <div class="box2" id="selectedBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <h3> Risk Factors Selected Options</h3>
+                            </div>
+                        </div>
                     
-                    <tr>
-                        <td> <label for="contact-std">Contact with Known STD Cases?:</label><br>
-                            <input type="radio" id="contact-yes" name="contact-std" value="yes">
-                            <label for="contact-yes">Yes</label><br>
-                            <input type="radio" id="contact-no" name="contact-std" value="no">
-                            <label for="contact-no">No</label></td>
-
-                            <td colspan="2"><label for="alcohol-use">Alcohol Intake?:</label><br>
-                                <input type="radio" id="alcohol-yes" name="alcohol-use" value="yes">
-                                <label for="alcohol-yes">Yes</label><br>
-                                <input type="radio" id="alcohol-no" name="alcohol-use" value="no">
-                                <label for="alcohol-no">No</label><br>
-                                <textarea id="alcohol-details" name="alcohol-details" placeholder="If yes, specify frequency"></textarea></td>
-
-                            <td colspan="2"><label for="tobacco-use">Tobacco Use:</label><br>
-                                <input type="radio" id="tobacco-yes" name="tobacco-use" value="yes">
-                                <label for="tobacco-yes">Yes</label><br>
-                                <input type="radio" id="tobacco-no" name="tobacco-use" value="no">
-                                <label for="tobacco-no">No</label><br>
-                                <textarea id="tobacco-details" name="tobacco-details" placeholder="If yes, specify frequency"></textarea></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2"><label for="medical-history"> History Of Sexual transmitted Diease:</label><br>
-                            <textarea id="medical-history" name="medical-history" placeholder="List any relevant medical conditions"></textarea>
-                        </td>
-                        <td colspan="2"><label for="STD">Period of STD</label><br/>
-                        <input type="date" name="date" id="STD"></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan=""><label for="contraceptive-use">Contraceptive Use:</label><br>
-                            <select id="contraceptive-use" name="contraceptive-use">
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select><br><br>
-                            <textarea id="contraceptive-details" name="contraceptive-details" placeholder="If yes, specify type"></textarea></td>
-
-                            <td colspan=""> <label for="bloodborne-exposure">Exposure to Bloodborne Pathogens:</label><br>
-                                <input type="radio" id="bloodborne-yes" name="bloodborne-exposure" value="yes">
-                                <label for="bloodborne-yes">Yes</label><br>
-                                <input type="radio" id="bloodborne-no" name="bloodborne-exposure" value="no">
-                                <label for="bloodborne-no">No</label><br>
-                                <textarea id="bloodborne-details" name="bloodborne-details" placeholder="If yes, specify details"></textarea></td>
-
-                                <td colspan="4"><label for="sexual-practices">Sexual Practices:</label><br>
-                                    <textarea id="sexual-practices" name="sexual-practices" placeholder="Describe sexual practices (e.g., vaginal, anal, oral sex)"></textarea><br><br>
-                                </td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2"> <label for="partner-risk-factors">Partner’s Risk Factors:</label><br>
-                            <textarea id="partner-risk-factors" name="partner-risk-factors" placeholder="Describe any known risk factors of partners"></textarea>
-                        </td>
-
-                        <td colspan="2"><label for="testing-history">Previous Testing History:</label><br>
-                            <textarea id="testing-history" name="testing-history" placeholder="List any previous STD tests and results"></textarea></td>
-                    </tr>
-                    </table>
+                        <script>
+                            function allowDrop(ev) {
+                                ev.preventDefault();
+                            }
+                    
+                            function drag(ev) {
+                                ev.dataTransfer.setData("text", ev.target.id);
+                            }
+                    
+                            function drop(ev) {
+                                ev.preventDefault();
+                                const data = ev.dataTransfer.getData("text");
+                                const draggedItem = document.getElementById(data);
+                                ev.target.appendChild(draggedItem);
+                            }
+                        </script>
                     <input type="submit" value="submit" name="submit"  style="  
                     margin-left: 400px;
                     margin-top: 20px;
